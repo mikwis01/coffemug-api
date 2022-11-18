@@ -1,3 +1,13 @@
+Dostępne routy:
+________________________
+
+  - [GET] /ping - Sprawdzenie czy API działa
+  - [GET] /product/get - Lista wszystkich produktów
+  - [GET] /product/get/:productId - Szczegóły produktu (konkretny produkt)
+  - [POST] /product/create - Utworzenie produktu ({name: "String - długość od 1 do 100, wymagany", price: "Number większy równy 0, wymagany"})
+  - [PUT] /product/update/:productId - Aktualizacja konkretnego produktu ({name: "String - długość od 1 do 100, wymagany", price: "Number większy równy 0, wymagany"})
+  - [DELETE] /product/delete/:productId - Usunięcie konkretnego produktu ({name: "String - długość od 1 do 100, wymagany", price: "Number większy równy 0, wymagany"})
+
 Instrukcje uruchomienia:
 ________________________
 
