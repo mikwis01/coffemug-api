@@ -1,7 +1,7 @@
 import Joi, { ObjectSchema } from 'joi'
 import { Request, Response, NextFunction } from 'express'
 import Log from '../utils/CustomLogs'
-import { ProductInterface } from '../models/prodcutModel'
+import { Product } from '../models/prodcutModel'
 
 export const Validate = (schema: ObjectSchema) => {
 	return async (req: Request, res: Response, next: NextFunction) => {
@@ -19,11 +19,11 @@ export const Validate = (schema: ObjectSchema) => {
 
 export const Schemas = {
 	product: {
-		create: Joi.object<ProductInterface>({
+		create: Joi.object<Product>({
 			name: Joi.string().min(1).max(100).required(),
 			price: Joi.number().min(0).required()
 		}),
-		update: Joi.object<ProductInterface>({
+		update: Joi.object<Product>({
 			name: Joi.string().min(1).max(100).required(),
 			price: Joi.number().min(0).required()
 		})

@@ -25,4 +25,4 @@ router.put(
 
 router.delete('/delete/:productId', deleteProduct)
 
-export = router
+export default router

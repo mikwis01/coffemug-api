@@ -1,11 +1,11 @@
 import mongoose, { Document, Schema } from 'mongoose'
 
-export interface ProductInterface {
+export interface Product {
 	name: string
 	price: number
 }
 
-export interface ProductModelInterface extends ProductInterface, Document {}
+export interface ProductModelInterface extends Product, Document {}
 
 const ProductSchema: Schema = new Schema(
 	{
