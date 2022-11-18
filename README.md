@@ -17,15 +17,15 @@ Instrukcje uruchomienia:
 ________________________
 
 Instalacja niezbędnych pakietów:
-  -npm i
+  - npm i
 
 Build (Użyć terminalu BASH):
 
-  -npm run build
+  - npm run build
   
 Start serwera:
 
-  -npm start
+  - npm start
   
   
 UWAGA: Plik .env dodany w celu udostępnienia możliwości pełnego wglądu w kod
