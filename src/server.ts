@@ -1,6 +1,5 @@
-import express, { Router } from 'express'
+import express from 'express'
 import { connectDB, port } from './config/config'
-import cors from 'cors'
 import Log from './utils/CustomLogs'
 import productRoutes from './routes/productRoutes'
 
@@ -10,7 +9,6 @@ connectDB().then(() => {
 	const app = express()
 
 	/**Middelware */
-	app.use(cors())
 	app.use(express.urlencoded({ extended: true }))
 	app.use(express.json())
 
